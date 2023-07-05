@@ -94,10 +94,11 @@ function createMessages(fromName, message) {
     p1ChatLog.appendChild(createMessages('P1', msg));
     sendChatMessage(P1localDataTrack, msg);
     let test = JSON.stringify({
-      type: 'STOP_SHARING',
+      type: 'STOP_SHARING111',
+      participant: roomP1.localParticipant
   });
   console.log(test,'log');
-  //   //sendChatMessage(P1localDataTrack, test);
+    sendChatMessage(P1localDataTrack, test);
     p1ChatLog.scrollTop = p1ChatLog.scrollHeight;
   }
 
